@@ -1,10 +1,46 @@
-.hero_section{
-    background-color: whitesmoke;
-    height: 100vh;
-    width: 100%;
-}
-
-.hero_poster{
-width:700px;
-height: 500px;
-}
+.text {
+    position: relative;
+    direction: ltr;
+    color: #000;
+    font-size: 10vw;
+    line-height: 1;
+    font-weight: 700;
+    text-align: justify;
+    text-transform: uppercase;
+  }
+  
+  .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25vh;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+  }
+  
+  .container.black {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  
+  .small {
+    position: relative;
+    direction: ltr;
+    color: #000;
+    font-size: 0.5vw;
+    line-height: 1;
+    font-weight: 700;
+    text-align: justify;
+    text-transform: uppercase;
+  }
