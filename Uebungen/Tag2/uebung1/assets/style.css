@@ -1,0 +1,49 @@
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero_container{
+    width: 100vw;
+    height: 10vh;
+    padding:2rem, 4rem;
+    border-bottom: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black,
+}
+
+.content_container{
+    width: 100vw;
+    height: 90vh;
+        padding:2rem, 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.baby{
+    max-width: 300px;
+    margin: 1rem;
+    align-self: flex-end;
+}
+
+.baby:first-child{
+    max-width: 300px;
+    margin: 1rem;
+    align-self: flex-start;
+}
+
+.baby:nth-child(2){
+    max-width: 300px;
+    margin: 1rem;
+    align-self: center;
+}
+
+.baby:nth-child(3){
+    max-width: 300px;
+    margin: 1rem;
+    align-self: flex-end;
+}

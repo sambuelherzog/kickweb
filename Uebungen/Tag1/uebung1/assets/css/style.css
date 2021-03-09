@@ -1,25 +1,49 @@
 body{
     color:white;
     font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
 }
 
-.button{
-    padding: 16px, 10px,16px, 10px;
+
+.button {
+    transition-property: background-color;
+    transition-duration: 450ms;
+    transition-timing-function: ease;
+    padding: 15px 32px;
     background-color: white;
     border-radius: 100px;
-    font-family: 'DotGothic16', sans-serif;
-}
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+  }
+  
+  .button:hover {
+    background-color: rgb(216, 216, 216);
+    color:white;
+  }
+
+
 
 a{
     text-decoration: none;
+    color:grey;
 }
 
 h1{
-    font-family: 'DotGothic16', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 4rem;
-    font-weight: 600;
-    text-transform: uppercase
+    font-weight: 300;
 }
+
+@media screen and (max-width: 767px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .button {
+        font-size: 0.75rem;
+        padding: 8px 16px;
+      }
+  }
 
 
 .hero_section{
