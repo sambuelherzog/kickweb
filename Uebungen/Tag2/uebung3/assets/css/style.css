@@ -1,5 +1,9 @@
+body{
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
 .section {
-    background-color:whitesmoke;
     height: 100vh;
     width:100%;
     display: flex;
@@ -11,5 +15,16 @@
     position: relative;
     width: 35%;
     padding-top: 49.5%;
+    background-color:lightblue;
+  }
+
+  .poster {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: auto;
     background-color: white;
   }
