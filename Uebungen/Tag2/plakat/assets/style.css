@@ -18,7 +18,7 @@ body {
   .ratio {
     position: relative;
     width: 35%;
-    padding-top: 49.5%;
+    padding-top: 49.60%;
     background-color: #fff;
     box-shadow: 0 0 11px -5px rgba(0, 0, 0, 0.05);
   }
@@ -30,7 +30,7 @@ body {
     right: 0%;
     bottom: 0%;
     width: 100%;
-    padding: 2rem;
+    padding: 2vh;
     background-color: #fff;
   }
   
@@ -49,6 +49,10 @@ body {
   
   .row.right {
     justify-content: flex-end;
+  }
+
+  .row.last {
+    border-bottom: none;
   }
   
   .row__container {

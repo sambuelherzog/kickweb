@@ -1,0 +1,38 @@
+.section {
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #dddcb2;
+  }
+  
+  .box {
+    width: 400px;
+    margin: 16px;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #fff;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    cursor: pointer;
+  }
+  
+  .box:hover {
+    margin-bottom: 32px;
+    background-color: #ff8787;
+    color: #fff;
+  }
+  
+  .box.secondary {
+    background-color: hsla(0, 0%, 100%, 0.25);
+  }
+  
+  .box.secondary:hover {
+    background-color: hsla(0, 0%, 100%, 0.15);
+    color: black;
+  }
+  
+  .box__text {
+    line-height: 1;
+  }

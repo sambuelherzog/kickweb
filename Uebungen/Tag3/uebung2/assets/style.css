@@ -1,0 +1,30 @@
+body {
+background-color: black;
+}
+
+.section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://media0.giphy.com/media/QReoA3iJBAA3C/giphy.gif?cid=ecf05e47l6pssjtdzn8pz6vos2cqv4jmh0v0prgo5b4io6ic&rid=giphy.gif);
+    background-position: 50%, 50%;
+    background-size: cover;
+  }
+
+  
+  .text {
+    padding: 32px;
+    font-size: 10vh;
+    background-color: #ff4848;
+    transition: all 1000ms cubic-bezier(.68, -.55, .265, 1.55);
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+  }
+  
+  .text:hover {
+    transform: rotateY(180deg) skew(200deg);
+  }
