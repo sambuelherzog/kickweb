@@ -14,7 +14,7 @@ section{
     transform: translate(0px, 0px);
     transform-origin: 0% 50%;
     animation-name: ballAnimation;
-    animation-duration: 2s;
+    animation-duration: 5s;
     position: relative;
   }
 
@@ -27,7 +27,7 @@ section{
     transform: translate(0px, 0px);
     transform-origin: 0% 50%;
     animation-name: boxAnimation;
-    animation-duration: 2s;
+    animation-duration: 5s;
     position: relative;
 }
 
@@ -55,16 +55,22 @@ border-radius: 50%;
 
 @keyframes boxAnimation {
 
-    from{
+    0%{
     background-color: green;
     transform: translateX(0px);
     border-radius: 2%;
     }
     
-    to{
+    50%{
         background-color: coral;
     transform: translateX(-100px);
     border-radius: 100%;
     }
+
+    100%{
+        background-color: green;
+        transform: translateX(0px);
+        border-radius: 2%;
+        }
     
     }
