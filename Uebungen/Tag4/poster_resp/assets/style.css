@@ -1,0 +1,148 @@
+body {
+  font-family: Platform, sans-serif;
+  color: #000;
+  font-size: 1vh;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.section {
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  min-height: 25vh;
+  border-top: 1px solid #000;
+  background-color: #fff;
+  border-bottom: 1px solid white;
+}
+
+
+.heading {
+  z-index: 1;
+  display: inline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: center;
+  transform: translate(0px, 0%);
+  font-size: 25vh;
+  line-height: 0.7;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.container_info {
+  display: flex;
+  padding: 1rem;
+ 
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  flex: 0 50%;
+}
+
+.bodytext {
+  margin-bottom: 0px;
+  font-size: 1vh;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 3.5vh;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.container_date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.date {
+  font-size: 3vh;
+  line-height: 1;
+}
+
+.container_name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 1.75vh;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.symbol {
+  width: 9%;
+  filter: grayscale(100%);
+}
+
+@keyframes marquee {
+  0% { left: 100%; }
+  50% { left: -100%; }
+  100% {left: -100%}
+}
+
+@font-face {
+  font-family: 'Platform';
+  src: url('../assets/Platform-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Platform';
+  src: url('../assets/Platform-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*–––––––——————––––––––––––––––––––––––––––*/
+
+
+.marquee {
+  width: 50vw;
+  height: 25vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scrolling 10s linear infinite;
+}
+
+.marquee-item {
+  height: 150px;
+  width: 10vw;
+  flex-shrink: 0;
+}
+
+.marquee-image {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-60vw); }
+}
