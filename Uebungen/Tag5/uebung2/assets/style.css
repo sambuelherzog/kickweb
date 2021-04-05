@@ -1,0 +1,88 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+ padding: 10px;
+ background-color: bisque;
+ width: 80%;
+ height: 50%;
+ flex-direction: row;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ order:inherit;
+}
+
+.letter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20vh;
+    color:black;
+    border: 1px solid black;
+    padding: 10px;
+    order:inherit;
+}
+
+.first {
+    order:1;
+}
+
+.second {
+    order:2;
+}
+
+.third {
+    order:3;
+}
+
+.fourth {
+    order:4;
+}
+
+.fifth {
+    order:5;
+}
+
+.sixth {
+    order:6;
+}
+
+@media screen and (max-width: 980px) {
+    .first {
+        order:5;
+    }
+    
+    .second {
+        order:3;
+    }
+    
+    .third {
+        order:4;
+    }
+    
+    .fourth {
+        order:6;
+    }
+    
+    .fifth {
+        order:2;
+    }
+    
+    .sixth {
+        order:1;
+    }
+
+    .container{
+        background-color: red;
+        flex-direction: row-reverse;
+    }
+  }
