@@ -27,18 +27,34 @@ section{
     position: relative;
 }
 
-.credits {
+button {
     position: absolute;
     left: 0%;
     top: auto;
     right: auto;
     bottom: 0%;
-    width: 100px;
-    height: 100px;
+
     border: 1px solid white;   
     border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 300ms ease-in-out;
+    cursor: pointer;
+    padding: 12px;
   }
+
+  button:hover{
+      background-color: grey;
+      border: 1px solid grey;  
+  }
+
+  .small{
+      font-size: 1rem;
+      color: black;
+  }
+
+  .small:hover{
+    font-size: 1rem;
+    color: white;
+}
